@@ -1,0 +1,26 @@
+# Build and temp files
+*.obj
+*.exe
+*.pch
+*.pdb
+*.ilk
+*.log
+*.tmp
+*.user
+*.suo
+*.ipch
+*.aps
+*.ncb
+
+# VS folders
+.vs/
+Debug/
+Release/
+x64/
+ipch/
+
+# CMake generated folders (if any)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
