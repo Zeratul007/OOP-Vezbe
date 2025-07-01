@@ -1,35 +1,31 @@
 #include"Pixel.h"
-#include<iostream>
 
-using namespace std;
 
 Pixel::Pixel(){
-	this->red = 0;
-	this->green = 0;
-	this->blue = 0;
+	this->R = 0;
+	this->G = 0;
+	this->B = 0;
 }
-Pixel::Pixel(int red, int green, int blue) {
-	this->set_Pixel(red, green, blue);
+Pixel::Pixel(unsigned char R, unsigned char G, unsigned char B) {
+	this->set_Pixel(R, G, B);
 }
-void Pixel::set_Pixel(int red, int green, int blue){
-	if (red >= 0 && red <= 256)
-		this->red = red;
-	else
-		this->red = 0;
-
-	if (green >= 0 && green <= 256)
-		this->green = green;
-	else
-		this->green = 0;
-
-	if (blue >= 0 && blue <= 256)
-		this->blue = blue;
-	else
-		this->blue = 0;
-
+void Pixel::set_Pixel(unsigned char R, unsigned char G, unsigned char  B){
+	this->R = R;
+	this->G = G;
+	this->B = B;
 }
+unsigned char Pixel::get_Red(unsigned char R) {
+	return R;
+}
+unsigned char Pixel::get_Green(unsigned char G) {
+	return G;
+}
+unsigned char Pixel::get_Blue(unsigned char B) {
+	return B;
+}
+
 
 void Pixel::read_Pixel(){
-	int red, green, blue;
-	cin >> red >> green >> blue;
+	unsigned char R, G, B;
+	cin >> R >> G >> B;
 }

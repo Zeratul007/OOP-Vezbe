@@ -1,17 +1,27 @@
 #pragma once
+#ifndef PIXEL_H
+#define	PIXEL_H
 
+#include<iostream>
+using namespace std;
 
-class Pixel
-{
+class Pixel{
+
 public:
 	Pixel();
-	Pixel(int red, int green, int blue);
-	void set_Pixel(int red, int green, int blue);
+	Pixel(unsigned char R, unsigned char G, unsigned char B);
+	void set_Pixel(unsigned char R, unsigned char G, unsigned char B);
+	unsigned char get_Red(unsigned char R);
+	unsigned char get_Green(unsigned char G);
+	unsigned char get_Blue(unsigned char B);
 	void read_Pixel();
 
 private:
-	int red;
-	int green;
-	int blue;
+	unsigned char R, G, B;
+	
 };
+
+#endif // PIXEL_HEADER
+
+
 
